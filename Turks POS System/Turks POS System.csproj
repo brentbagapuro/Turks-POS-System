@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A309867A-44C2-49E2-9BFE-6BB07227D20B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Turks_POS_System</RootNamespace>
+    <AssemblyName>Turks POS System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf, Version=2.7.9.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.9\lib\net45\IronPython.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.2.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.2.2\lib\net45\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.2.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.2.2\lib\net45\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.2.2.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.2.2\lib\net45\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PythonPlotter, Version=1.0.5927.39198, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PythonPlotter.0.2.15\lib\net45\Release\PythonPlotter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.109.2\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.109.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.109.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_Inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ad_Inventory.Designer.cs">
+      <DependentUpon>Ad_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ad_Main.Designer.cs">
+      <DependentUpon>Ad_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_Maintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ad_Maintenance.Designer.cs">
+      <DependentUpon>Ad_Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_Purchase_Orders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ad_Purchase_Orders.Designer.cs">
+      <DependentUpon>Ad_Purchase_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_Receiving.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ad_Receiving.Designer.cs">
+      <DependentUpon>Ad_Receiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_Sales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ad_Sales.Designer.cs">
+      <DependentUpon>Ad_Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cash_Dem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cash_Dem.Designer.cs">
+      <DependentUpon>Cash_Dem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Dialog.Designer.cs">
+      <DependentUpon>Change_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirm_Dialog.Designer.cs">
+      <DependentUpon>Confirm_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DailyReport.Designer.cs">
+      <DependentUpon>DailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatePick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatePick.Designer.cs">
+      <DependentUpon>DatePick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dates.Designer.cs">
+      <DependentUpon>Dates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db_turksDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_turksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItem.Designer.cs">
+      <DependentUpon>FoodItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItem2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItem2.Designer.cs">
+      <DependentUpon>FoodItem2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItemEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItemEx.Designer.cs">
+      <DependentUpon>FoodItemEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItem_Split1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItem_Split1.Designer.cs">
+      <DependentUpon>FoodItem_Split1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItem_Split2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItem_Split2.Designer.cs">
+      <DependentUpon>FoodItem_Split2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItem_Split3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItem_Split3.Designer.cs">
+      <DependentUpon>FoodItem_Split3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItem_Split4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItem_Split4.Designer.cs">
+      <DependentUpon>FoodItem_Split4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItem_Split5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodItem_Split5.Designer.cs">
+      <DependentUpon>FoodItem_Split5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items_inv_Pita.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items_inv_Pita.Designer.cs">
+      <DependentUpon>Items_inv_Pita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderItem.Designer.cs">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preupgrade_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preupgrade_Dialog.Designer.cs">
+      <DependentUpon>Preupgrade_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qty_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty_Dialog.Designer.cs">
+      <DependentUpon>Qty_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Split_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Split_Dialog.Designer.cs">
+      <DependentUpon>Split_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upgrade_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upgrade_Dialog.Designer.cs">
+      <DependentUpon>Upgrade_Dialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_Inventory.resx">
+      <DependentUpon>Ad_Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_Main.resx">
+      <DependentUpon>Ad_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_Maintenance.resx">
+      <DependentUpon>Ad_Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_Purchase_Orders.resx">
+      <DependentUpon>Ad_Purchase_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_Receiving.resx">
+      <DependentUpon>Ad_Receiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ad_Sales.resx">
+      <DependentUpon>Ad_Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash_Dem.resx">
+      <DependentUpon>Cash_Dem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Dialog.resx">
+      <DependentUpon>Change_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm_Dialog.resx">
+      <DependentUpon>Confirm_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyReport.resx">
+      <DependentUpon>DailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatePick.resx">
+      <DependentUpon>DatePick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dates.resx">
+      <DependentUpon>Dates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem.resx">
+      <DependentUpon>FoodItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem2.resx">
+      <DependentUpon>FoodItem2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItemEx.resx">
+      <DependentUpon>FoodItemEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem_Split1.resx">
+      <DependentUpon>FoodItem_Split1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem_Split2.resx">
+      <DependentUpon>FoodItem_Split2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem_Split3.resx">
+      <DependentUpon>FoodItem_Split3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem_Split4.resx">
+      <DependentUpon>FoodItem_Split4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItem_Split5.resx">
+      <DependentUpon>FoodItem_Split5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items_inv_Pita.resx">
+      <DependentUpon>Items_inv_Pita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItem.resx">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preupgrade_Dialog.resx">
+      <DependentUpon>Preupgrade_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Qty_Dialog.resx">
+      <DependentUpon>Qty_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Split_Dialog.resx">
+      <DependentUpon>Split_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upgrade_Dialog.resx">
+      <DependentUpon>Upgrade_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="db_turksDataSet.xsc">
+      <DependentUpon>db_turksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_turksDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_turksDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_turksDataSet.xss">
+      <DependentUpon>db_turksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db_turks.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db_turks_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>db_turks.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Small Beef Pita Doner with Fries and Drink.jpg" />
+    <None Include="Resources\Small Chicken Pita Doner with Fries and Drink.jpg" />
+    <None Include="Resources\Beef Doner Bowl with Drink.jpg" />
+    <None Include="Resources\Small Chicken Pita Doner with Drink.jpg" />
+    <None Include="Resources\Small Beef Pita Doner with Drink.jpg" />
+    <None Include="Resources\Chicken Doner Bowl with Drink.jpg" />
+    <None Include="Resources\Small Beef Pita Doner.jpg" />
+    <None Include="Resources\Chicken Doner Bowl.jpg" />
+    <None Include="Resources\Beef Doner Bowl.jpg" />
+    <None Include="Resources\Small Chicken Pita Doner.jpg" />
+    <None Include="Resources\Hotdog Wrap with Fries and Drink.jpg" />
+    <None Include="Resources\Hotdog Rice with Fries and Drink.jpg" />
+    <None Include="Resources\Hotdog Wrap with Drink.jpg" />
+    <None Include="Resources\Hotdog Rice with Drink.jpg" />
+    <None Include="Resources\Hotdog Wrap.jpg" />
+    <None Include="Resources\Hotdog Rice.jpg" />
+    <None Include="Resources\Water.jpg" />
+    <None Include="Resources\box line31.png" />
+    <None Include="Resources\box line3.png" />
+    <None Include="Resources\box line1.png" />
+    <None Include="Resources\box line.png" />
+    <None Include="Resources\Hot Sauce with Cheese.jpg" />
+    <None Include="Resources\Turks Fries.jpg" />
+    <None Include="Resources\Sprite.jpg" />
+    <None Include="Resources\Royal.jpg" />
+    <None Include="Resources\Nestea Lemonade.jpg" />
+    <None Include="Resources\Nestea Iced Tea.jpg" />
+    <None Include="Resources\Hot Sauce.jpg" />
+    <None Include="Resources\Garlic Sauce.jpg" />
+    <None Include="Resources\Fries and Drink.jpg" />
+    <None Include="Resources\Extra Rice.jpg" />
+    <None Include="Resources\Coke.jpg" />
+    <None Include="Resources\Cheese Sauce.jpg" />
+    <None Include="Resources\Cheddar Cheese.jpg" />
+    <None Include="Resources\Kebab Wrap with Fries and Drink.jpg" />
+    <None Include="Resources\Kebab on Rice with Fries and Drink.jpg" />
+    <None Include="Resources\Kebab and Chicken Platter with Fries and Drink.jpg" />
+    <None Include="Resources\Kebab and Beef Platter with Fries and Drink.jpg" />
+    <None Include="Resources\Chicken Pita Doner with Fries and Drink.jpg" />
+    <None Include="Resources\Chicken Doner Steak with Fries and Drink.jpg" />
+    <None Include="Resources\Chicken Doner on Rice with Fries and Drink.jpg" />
+    <None Include="Resources\Beef Pita Doner with Fries and Drink.jpg" />
+    <None Include="Resources\Beef Doner Steak with Fries and Drink.jpg" />
+    <None Include="Resources\Beef Doner on Rice with Fries and Drink.jpg" />
+    <None Include="Resources\Beef and Chicken Platter with Fries and Drink.jpg" />
+    <None Include="Resources\Kebab Wrap with Drink.jpg" />
+    <None Include="Resources\Kebab on Rice with Drink.jpg" />
+    <None Include="Resources\Kebab and Chicken Platter with Drink.jpg" />
+    <None Include="Resources\Kebab and Beef Platter with Drink.jpg" />
+    <None Include="Resources\Chicken Pita Doner with Drink.jpg" />
+    <None Include="Resources\Chicken Doner Steak with Drink.jpg" />
+    <None Include="Resources\Chicken Doner on Rice with Drink.jpg" />
+    <None Include="Resources\Beef Pita Doner with Drink.jpg" />
+    <None Include="Resources\Beef Doner Steak with Drink.jpg" />
+    <None Include="Resources\Beef Doner on Rice with Drink.jpg" />
+    <None Include="Resources\Beef and Chicken Platter with Drink.jpg" />
+    <None Include="Resources\Kebab Wrap.jpg" />
+    <None Include="Resources\Kebab on Rice.jpg" />
+    <None Include="Resources\Kebab and Chicken Platter.jpg" />
+    <None Include="Resources\Kebab and Beef Platter.jpg" />
+    <None Include="Resources\Chicken Pita Doner.jpg" />
+    <None Include="Resources\Chicken Doner Steak.jpg" />
+    <None Include="Resources\Chicken Doner on Rice.jpg" />
+    <None Include="Resources\Beef Pita Doner.jpg" />
+    <None Include="Resources\Beef Doner Steak.jpg" />
+    <None Include="Resources\Beef Doner on Rice.jpg" />
+    <None Include="Resources\Beef and Chicken Platter.jpg" />
+    <None Include="Resources\Beef Pita Doner1.jpg" />
+    <None Include="Resources\Beef Doner Steak1.jpg" />
+    <None Include="Resources\Beef Doner on Rice1.jpg" />
+    <None Include="Resources\Beef and Chicken Platter1.jpg" />
+    <None Include="Resources\Turks-Franchise.jpg" />
+    <None Include="Resources\turks_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
+</Project>

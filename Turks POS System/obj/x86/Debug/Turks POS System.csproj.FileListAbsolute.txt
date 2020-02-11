@@ -1,0 +1,40 @@
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\db_turks.mdf
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\db_turks_log.ldf
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\x64\SQLite.Interop.dll
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\x86\SQLite.Interop.dll
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\Turks POS System.exe.config
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\Turks POS System.exe
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\Turks POS System.pdb
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\EntityFramework.dll
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\EntityFramework.SqlServer.dll
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\System.Data.SQLite.dll
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\System.Data.SQLite.EF6.dll
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\System.Data.SQLite.Linq.dll
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\EntityFramework.xml
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\EntityFramework.SqlServer.xml
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\System.Data.SQLite.xml
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\bin\x86\Debug\System.Data.SQLite.dll.config
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Admin.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Ad_Inventory.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Ad_Main.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Ad_Purchase_Orders.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Ad_Sales.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Change_Dialog.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Confirm_Dialog.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.DailyReport.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Employee.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.FoodItem.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.FoodItem2.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.FoodItemEx.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Login.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.OrderItem.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Preupgrade_Dialog.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Properties.Resources.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Qty_Dialog.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Split_Dialog.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks_POS_System.Upgrade_Dialog.resources
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks POS System.csproj.GenerateResource.cache
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks POS System.csproj.CoreCompileInputs.cache
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks POS System.csproj.CopyComplete
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks POS System.exe
+C:\Users\brent\source\repos\Turks POS System\Turks POS System\obj\x86\Debug\Turks POS System.pdb
